@@ -9,11 +9,12 @@
 
 }
 .r9{
+    width: 30%;
     display: flex;
     justify-content: center;
 }
 #r9-img{
-    width: 30%;
+    width: 100%;
     height: auto;
     min-height: 100%;
 }
@@ -37,9 +38,11 @@
     height: 650px;
 }
 @media only screen and (max-width: 600px){
-    #r9-img{
+    .r9{
         width: 60%;
-        height: 300px;
+    }
+    #r9-img{
+        width: 100%;
     }
     .line{
         display: none;
