@@ -1,0 +1,50 @@
+.title-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10vw;
+}
+.title-picture{
+
+}
+.r9{
+    display: flex;
+    justify-content: center;
+}
+.r9 > img{
+    width: 30%;
+}
+
+.line{
+    display: flex;
+    justify-content: center;
+}
+.line > div{
+    width: 1px;
+    height: 100px;
+    background-color: #BC9F5E;
+    margin: 20px;
+}
+
+.background-image1{
+    background-image: url('../assets/home/svg/LineArt-บ้านนา-หน้าแรก.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom;
+    height: 650px;
+}
+@media only screen and (max-width: 600px){
+    .r9 > img{
+        width: 60%;
+    }
+    .line{
+        display: none;
+    }
+    .background-image1{
+        height: 500px;
+    }
+    #content2{
+        margin: 50px 0px;
+    }
+}
