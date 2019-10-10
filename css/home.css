@@ -13,9 +13,8 @@
     justify-content: center;
 }
 .r9 > img{
-    width: 30vw;
-    max-width: 300px;
-    max-height: 500px;
+    width: 30%;
+    height: auto;
 }
 
 .line{
@@ -38,7 +37,8 @@
 }
 @media only screen and (max-width: 600px){
     .r9 > img{
-        width: 60vw;
+        width: 60%;
+        height: auto;
     }
     .line{
         display: none;
