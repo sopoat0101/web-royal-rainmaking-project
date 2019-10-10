@@ -13,13 +13,13 @@
     src: url('/fonts/Kanit/Kanit-Light.ttf')
 }
 .font-MINIONPRO{
-    font-family: 'MINIONPRO';
+    font-family: 'MINIONPRO', sans-serif;
 }
 .font-ITALICT{
-    font-family: 'ITALICT';
+    font-family: 'ITALICT', sans-serif;
 }
 .font-Kanit{
-    font-family: 'Kanit';
+    font-family: 'Kanit', sans-serif;
 }
 .text-space-1{
     letter-spacing:1px;
