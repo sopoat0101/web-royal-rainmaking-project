@@ -8,19 +8,11 @@
 .title-picture{
 
 }
-.r9{
-    width: 30%;
-    display: flex;
-    justify-content: center;
-    /* background-image: url('../assets/home/png/r9.png');
-    background-size: 100% ;
-    background-repeat: no-repeat; */
-    min-height: 100%;
-}
+
 #r9-img{
     width: 30%;
     height: auto;
-    display: flex;
+    /* display: flex; */
 }
 
 .line{
@@ -42,9 +34,6 @@
     height: 650px;
 }
 @media only screen and (max-width: 600px){
-    .r9{
-        width: 60%;
-    }
     #r9-img{
         width: 60%;
     }
