@@ -12,7 +12,7 @@
 #r9-img{
     width: 30%;
     height: auto;
-    /* display: flex; */
+    display: flex;
 }
 
 .line{
