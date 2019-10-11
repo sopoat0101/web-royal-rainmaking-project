@@ -18,9 +18,9 @@
     min-height: 100%;
 }
 #r9-img{
-    width: 100%;
+    width: 30%;
     height: auto;
-    min-height: 100%;
+    display: flex;
 }
 
 .line{
@@ -46,7 +46,7 @@
         width: 60%;
     }
     #r9-img{
-        width: 100%;
+        width: 60%;
     }
     .line{
         display: none;
