@@ -48,12 +48,16 @@ body{
 
 .container{
     padding: 5% 10% 5%;
+    position: relative;
 }
 .background-b1{
     background-color: #535E70;
 }
 .background-b2{
     background-color: #E5E1D8;
+}
+.background-b3{
+    background-color: white;
 }
 .color-c1{
     color: white;
@@ -70,11 +74,23 @@ body{
     justify-content: center;
 }
 
+.layer-top{
+    z-index: 100;
+}
+
+.layer-mid{
+    z-index: 0;
+}
+
+.layer-bot{
+    z-index: -100;
+}
+
 footer{
     padding: 50px 0px;
 }
 /*  */
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 670px){
     .font-size-S{
         font-size: 1em;
     }
@@ -82,6 +98,6 @@ footer{
         font-size: 2em;
     }
     .font-size-L{
-        font-size: 3em;
+        font-size: 2.5em;
     }
 }

@@ -1,3 +1,65 @@
+body{
+    overflow: hidden;
+}
+.warp-parallax{
+    width: 100%;
+    transform-style: preserve-3d;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    perspective: 1px;
+    height: 100vh;
+    position: relative;
+}
+
+/*  */
+
+@keyframes airplanefly {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(100vw);
+    }
+}
+@keyframes cloud1{
+    from{
+        transform: translateX(-50vw);
+    }
+    to{
+        transform: translateX(0vw);
+    }
+}
+@keyframes cloud2{
+    from{
+        transform: translateX(50vw);
+    }
+    to{
+        transform: translateX(0vw);
+    }
+}
+
+@keyframes rainDrop{
+    from{
+        transform: translateY(10vh);
+    }
+    to{
+        transform: translateY(100vh);
+    }
+}
+
+.airplane-animation{
+    animation: airplanefly 2s linear forwards;
+}
+.cloudc1-animation{
+    animation: 2s cloud1 2s ease-in forwards;
+}
+.cloudc2-animation{
+    animation: 2s cloud2 2s ease-in forwards;
+}
+.rain-drop-animation{
+    animation: rainDrop 2s ease-in infinite;
+}
+/*  */
 .title-logo{
     display: flex;
     justify-content: center;
@@ -5,8 +67,49 @@
     text-align: center;
     padding: 10vw;
 }
-.title-picture{
+/*  */
+.background-animation{
+    margin-top: 340px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateZ(-1px) scale(2);
+}
+.airplane > img{
+    width: 15vw;
+}
+.cloud-area{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.cloud{
+    width: 40vw;
+    position: absolute;
+    z-index: -100;
+}
+.c1{
+    transform: translateX(-100vw);
+}
+.c2{
+    right: 0;
+    transform: translateX(100vw);
+}
 
+.rain{
+    top: 0;
+    width: 1px;
+    background-color: rgba(255, 255, 255, 0.4);
+    position: absolute;
+    z-index: -101;
+}
+
+/*  */
+.title-picture{
+    position: relative;
 }
 
 #r9-img{
@@ -32,6 +135,15 @@
     background-size: 100%;
     background-position: bottom;
     height: 650px;
+}
+
+@media only screen and (max-width: 1200px){
+    .background-animation{
+        margin-top: 220px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
 }
 @media only screen and (max-width: 600px){
     #r9-img{
