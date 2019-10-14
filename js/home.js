@@ -4,7 +4,7 @@ function start() {
     setTimeout(() => {
         raining = setInterval(() => {
             if (count < 50) {
-                let sky = document.querySelector('.cloud-area');
+                let sky = document.querySelector('.rain-area');
                 let rain = document.createElement('div');
                 rain.classList.add('rain');
                 let position = Math.floor(Math.random() * 101);
@@ -18,6 +18,12 @@ function start() {
             }
         }, 150);
     }, 4000);
+    setTimeout(() => {
+        let flower = document.getElementsByClassName('flower');
+        for (let i = 0; i < flower.length; i++) {
+            flower[i].style.transform = 'scale(1)'
+        }
+    }, 4500);
 }
 
 function clearRianDrop() {
