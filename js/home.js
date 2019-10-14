@@ -51,17 +51,23 @@ function checkCenterScreen() {
 
 function showContent1(x) {
     let flower = document.querySelector('.flower');
+    let flowerLeft = document.querySelector('.side-flower-left');
+    let flowerRight = document.querySelector('.side-flower-right');
     if (x) {
         flower.style.transform = 'scale(1)';
         // 
         content1.style.opacity = '1';
         content1.style.transform = 'translateY(0px)'
+        flowerLeft.style.transform = 'translateX(-12vw)'
+        flowerRight.style.transform = 'scaleX(-1) translateX(-90vw)'
     }
     else {
         flower.style.transform = 'scale(0)';
         // 
         content1.style.opacity = '0';
         content1.style.transform = 'translateY(100px)'
+        flowerLeft.style.transform = 'translateX(-40vw)'
+        flowerRight.style.transform = 'scaleX(-1) translateX(-100vw)'
     }
 }
 function showContent2(x) {

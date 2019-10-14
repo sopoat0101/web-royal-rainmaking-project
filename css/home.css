@@ -99,6 +99,7 @@ body{
 }
 .c2{
     right: 0;
+    margin-top: 7%;
     transform: translateX(100vw);
 }
 
@@ -206,6 +207,7 @@ body{
     width: 20vw;
     position: absolute;
     bottom: 0;
+    transition: 1s;
 }
 .side-flower-left{
     bottom: 0;

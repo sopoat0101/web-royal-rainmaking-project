@@ -12,6 +12,10 @@
     font-family: 'Kanit';
     src: url('../fonts/Kanit/Kanit-Light.ttf')
 }
+@font-face{
+    font-family: 'THSarabunNew';
+    src: url('../fonts/THSarabunNew/THSarabunNew.ttf')
+}
 .font-MINIONPRO{
     font-family: 'MINIONPRO', sans-serif;
 }
@@ -20,6 +24,9 @@
 }
 .font-Kanit{
     font-family: 'Kanit', sans-serif;
+}
+.font-THSarabunNew{
+    font-family: 'THSarabunNew', sans-serif; 
 }
 .text-space-1{
     letter-spacing:1px;
@@ -33,11 +40,14 @@
 .font-size-S{
     font-size: 1.5em;
 }
+.font-size-SM{
+    font-size: 2em;
+}
 .font-size-M{
     font-size: 3em;
 }
 .font-size-L{
-    font-size: 5em;
+    font-size: 4.5em;
 }
 *{
     margin: 0 auto;
@@ -104,6 +114,9 @@ footer{
 @media only screen and (max-width: 670px){
     .font-size-S{
         font-size: 1em;
+    }
+    .font-size-SM{
+        font-size: 1.2em;
     }
     .font-size-M{
         font-size: 2em;
