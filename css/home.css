@@ -81,7 +81,7 @@ body{
     position: absolute;
 }
 .airplane > img{
-    width: 15vw;
+    width: 30vw;
 }
 .cloud-area{
     overflow: hidden;
@@ -218,6 +218,11 @@ body{
     bottom: 0;
     left: 0;
     transform: scaleX(-1) translateX(-90vw);
+}
+.home-cont-2{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
 }
 @media only screen and (max-width: 1200px){
     .background-animation{

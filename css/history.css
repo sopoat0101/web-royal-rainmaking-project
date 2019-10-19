@@ -1,0 +1,110 @@
+nav{
+    width: 100vw;
+    transition: 0.3s;
+}
+footer{
+    width: 100vw;
+    bottom: 0;
+}
+.wrap-content{
+    overflow: hidden;
+}
+.slider{
+    position: relative;
+    width: 500vw;
+    height: calc(100vh - 150px);
+    transition: 0.8s ease-in-out;
+    overflow: hidden;
+}
+.content{
+    float: left;
+    width: 100vw;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+/*  */
+.content::-webkit-scrollbar {
+    width: 0em;
+    height: 0em;
+}
+/* .content::-webkit-scrollbar-button {
+    background: #ccc
+}
+.content::-webkit-scrollbar-track-piece {
+    background: #888
+}
+.content::-webkit-scrollbar-thumb {
+    background: #eee
+}​ */
+/*  */
+/* Content 1 */
+.inner-content{
+    /* padding: 10%; */
+}
+.botton{
+    position: fixed;
+    top: 50%;
+    cursor: pointer;
+}
+.button-img{
+    width: 80px;
+    height: 80px;
+}
+.head-content{
+    height: 250px;
+}
+.content-history{
+    padding: 100px 0px;
+}
+.head-content > div{
+    padding: 0px 5%;
+    border-left: 2px solid #AF9A6E;
+    border-right: 2px solid #AF9A6E;
+}
+.history-img{
+    width: 15vw;
+}
+.reverse{
+    transform: scaleX(-1);
+}
+.timeline{
+    width: 100%;
+    height: 2px;
+    background-color: #AF9A6E;
+}
+.timeline-start{
+    width: 50%;
+    margin-left: 50%;
+    height: 2px;
+    background-color: #AF9A6E;
+}
+.start{
+    position: relative;
+    left: calc(50% - 40px);
+    top: -35px;
+    cursor: pointer;
+}
+.start > figure > img{
+    transition: 0.3s;    
+}
+.start > figure > img:hover{
+    transform: scale(1.2);
+}
+/*  */
+/* Content 2 */
+@media only screen and (max-width: 1200px){
+    /* .inner-content{
+        padding-top: 90px;
+    } */
+    .slider{
+        height: calc(100vh - 90px);
+    }
+}
+@media only screen and (max-width:670px){
+    .button-img{
+        width: 50px;
+        height: 50px;
+    }
+}
