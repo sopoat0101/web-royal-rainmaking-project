@@ -5,6 +5,7 @@ nav{
 footer{
     width: 100vw;
     bottom: 0;
+    margin-top: 50px;
 }
 .wrap-content{
     overflow: hidden;
@@ -13,7 +14,7 @@ footer{
     position: relative;
     width: 500vw;
     height: calc(100vh - 150px);
-    transition: 0.8s ease-in-out;
+    transition: 0.6s ease-in-out;
     overflow: hidden;
 }
 .content{
@@ -41,22 +42,26 @@ footer{
 /*  */
 /* Content 1 */
 .inner-content{
-    /* padding: 10%; */
+    height: 100%;
+    display: grid;
+    grid-template-columns: 60vw auto;
 }
 .botton{
     position: fixed;
     top: 50%;
     cursor: pointer;
+    transition: 0.3s;
 }
 .button-img{
     width: 80px;
     height: 80px;
 }
 .head-content{
-    height: 250px;
+    height: 300px;
 }
 .content-history{
-    padding: 100px 0px;
+    height: 50%;
+    padding: 0px 5px 100px;
 }
 .head-content > div{
     padding: 0px 5%;
@@ -64,7 +69,8 @@ footer{
     border-right: 2px solid #AF9A6E;
 }
 .history-img{
-    width: 15vw;
+    min-width: 50px;
+    width: 10vw;
 }
 .reverse{
     transform: scaleX(-1);
@@ -85,6 +91,7 @@ footer{
     left: calc(50% - 40px);
     top: -35px;
     cursor: pointer;
+    transition: 0.3s;
 }
 .start > figure > img{
     transition: 0.3s;    
@@ -94,17 +101,81 @@ footer{
 }
 /*  */
 /* Content 2 */
+.max-width{
+    width: 100%;
+    position: relative;
+}
+.head-content-head{
+    height: 300px;
+    position: relative;
+}
+.year-cloud > figure > img{
+    width: 20vw;
+    min-width: 200px;
+}
+.gold-arrow{
+    position: absolute;
+    left: calc(50% - 25px);
+    top: calc(300px - 20px);
+}
+.content-para{
+    padding: 50px 0px 50px 100px;
+    display: flex;
+    align-items: center;
+    height: 50%;
+}
+.content-para > p{
+    display: flex;
+}
+.content-img{
+    position: absolute;
+    top: calc(300px - 250px);
+}
+.content-img > figure > img{
+    width: 100%;
+    max-width: 500px;
+    min-width: 200px;
+}
+/*  */
 @media only screen and (max-width: 1200px){
-    /* .inner-content{
-        padding-top: 90px;
-    } */
+    .inner-content{
+        height: auto;
+    }
     .slider{
         height: calc(100vh - 90px);
     }
+    .content-img{
+        position: absolute;
+        top: calc(250px - 150px);
+    }
+    .content-img > figure > img{
+        /* width: 100%; */
+        max-width: 300px;
+        min-width: 200px;
+    }
 }
 @media only screen and (max-width:670px){
+    .inner-content{
+        display: grid;
+        grid-template-columns: auto;
+        height: auto;
+    }
     .button-img{
         width: 50px;
         height: 50px;
+    }
+    .content-para{
+        padding: 50px 60px;
+        text-align: justify;
+    }
+    .content-img{
+        padding: 0px 0px 50px;
+        position: relative;
+        top: 0;
+    }
+    .content-img > figure > img{
+        width: 100%;
+        max-width: 300px;
+        min-width: 200px;
     }
 }
