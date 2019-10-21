@@ -1,0 +1,29 @@
+nav{
+    width: 100vw;
+    transition: 0.3s;
+}
+
+footer{
+    width: 100vw;
+    bottom: 0;
+    margin-top: 50px;
+}
+
+.wrap-content{
+    overflow: hidden;
+}
+
+.container-content{
+	padding: 80px 15vw;
+	display: flex;
+}
+
+.head-content{
+    height: 300px;
+    text-align: center;
+}
+
+.content-content{
+	width: 32%;
+	display: block;
+}

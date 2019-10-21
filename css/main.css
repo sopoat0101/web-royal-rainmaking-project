@@ -34,6 +34,9 @@
 .text-space-3{
     letter-spacing:3px;
 }
+.text-space-5{
+    letter-spacing:5px;
+}
 .text-line-height{
     line-height: 90%
 }
