@@ -16,6 +16,15 @@
     font-family: 'THSarabunNew';
     src: url('../fonts/THSarabunNew/THSarabunNew.ttf')
 }
+/*  */
+figure{
+    display: block;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0px;
+}
+/*  */
 .font-MINIONPRO{
     font-family: 'MINIONPRO', sans-serif;
 }

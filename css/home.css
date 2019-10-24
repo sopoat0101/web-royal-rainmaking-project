@@ -126,6 +126,7 @@ body{
     height: auto;
     display: flex;
     z-index: 100;
+    margin: auto;
 }
 .flower{
     position: absolute;
@@ -223,6 +224,7 @@ body{
     min-height: 100vh;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 @media only screen and (max-width: 1200px){
     .background-animation{
