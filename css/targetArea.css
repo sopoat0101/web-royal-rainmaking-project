@@ -51,33 +51,33 @@ footer{
     position: absolute;
 }
 .map1{
-    top: 16px;
-    left: 152px;
-    width: 151px;
+    top: 0px;
+    left: 130px;
+    width: 173px;
     z-index: 103;
 }
 .map2{
-    top: 87px;
-    left: 276px;
-    width: 165px;
+    top: 83px;
+    left: 272px;
+    width: 190px;
     z-index: 103;
 }
 .map3{
     top: 127px;
-    left: 176px;
-    width: 175px;
+    left: 157px;
+    width: 203px;
     z-index: 102;
 }
 .map4{
-    top: 244px;
-    left: 264px;
-    width: 88px;
+    top: 264px;
+    left: 259px;
+    width: 100px;
     z-index: 103;
 }
 .map5{
-    top: 280px;
-    left: 128px;
-    width: 255px;
+    top: 304px;
+    left: 100px;
+    width: 295px;
     z-index: 102;
 }
 @media only screen and (max-width:1200px){
