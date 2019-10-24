@@ -20,9 +20,8 @@
 	border-right: 2px solid #AF9A6E;
 	position: relative;
 }
-
-#header{
-	
+.hover:hover{
+	cursor: pointer;
 }
 
 #koang{
@@ -35,6 +34,16 @@
 	top: 0;
 	right: 0;
 	transform: rotate(25deg);
+}
+
+#flower-left{
+	top: -400px;
+	left: 0px;
+}
+
+#flower-right{
+	top: -400px;
+	right: 0px;
 }
 
 .container-content{
@@ -70,7 +79,6 @@
 	max-height: 560px;
 	position: relative;
 	transition: 0.6s ease-in-out;
-	overflow: hidden;
 }
 .content-slider{
 	margin-top: 20px;
@@ -85,9 +93,49 @@
 .content{
 	width: 500vw;
 }
+
+.carousel{
+	width: 100vw;
+	position: relative;
+}
+.svg-image{
+	width: 30vw;
+}
+#pic2{
+	width: 25vw;
+}
+#pic3{
+	width: 20vw;
+}
+#cloud1{
+	left: -150px;
+	top: 50px;
+}
+#cloud2{
+	right: -150px;
+	bottom: 140px;
+}
+
 @media only screen and (max-width: 1200px){
 	.content-content{
 		margin-right: 10%;
+	}
+	.svg-image{
+		width: 75vw;
+	}
+	#pic2{
+		width: 45vw;
+	}
+	#pic3{
+		width: 32vw;
+	}
+	#flower-left{
+		top: -350px;
+		left: -40px;
+	}
+	#flower-right{
+		top: -350px;
+		right: -40px;
 	}
 }
 
@@ -118,5 +166,33 @@
 	}
 	.content-image{
 		width: 80%;
+	}
+	.svg-image{
+		width: 80vw;
+	}
+	#pic3{
+		width: 40vw;
+	}
+	#main_pic{
+		width: 60%;
+	}
+}
+
+@media only screen and (max-width: 768px){
+	.svg-image{
+		width: 100vw;
+	}
+	#pic2{
+		width: 70vw;
+	}
+	#pic3{
+		width: 60vw;
+	}
+	#cloud1{
+		left: -30px;
+	}
+	#cloud2{
+		right: -30px;
+		bottom: 50px;
 	}
 }
