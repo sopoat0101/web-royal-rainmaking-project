@@ -24,6 +24,7 @@ footer{
     overflow: hidden;
     overflow-y: auto;
     scroll-behavior: smooth;
+    position: relative;
 }
 /*  */
 .content::-webkit-scrollbar {
@@ -90,11 +91,11 @@ footer{
     position: relative;
     left: calc(50% - 40px);
     top: -35px;
-    cursor: pointer;
     transition: 0.3s;
 }
 .start > figure > img{
     transition: 0.3s;    
+    cursor: pointer;
 }
 .start > figure > img:hover{
     transform: scale(1.2);
@@ -135,6 +136,61 @@ footer{
     width: 100%;
     max-width: 500px;
     min-width: 200px;
+}
+.background-history{
+    width: 600vw;
+    height: 100%;
+    position: absolute;
+    transition: 0.8s;
+    overflow: hidden;
+    opacity: 0.6;
+}
+.background-history > div{
+    float: left;
+}
+.bgc{
+    position: absolute;
+}
+.bgc > figure > img{
+    width: 60vw;
+}
+.c1{
+    top: 50vh;
+    transform: translateX(-15vw);
+}
+.c2{
+    transform: translateX(80vw);
+}
+.c3{
+    top: 25vh;
+    transform: translateX(200vw);
+}
+.c4{
+    top: 25vh;
+    transform: translateX(340vw);
+}
+.c5{
+    top: 5vh;
+    transform: translateX(-30vw);
+}
+.c6{
+    top: 50vh;
+    transform: translateX(80vw);
+}
+.c7{
+    transform: translateX(200vw);
+}
+.c8{
+    transform: translateX(550vw);
+}
+#ap{
+    transition: 3s;
+}
+#ap > figure > img{
+    width: 30vw;
+}
+.imgap{
+    transition: 0s;
 }
 /*  */
 @media only screen and (max-width: 1200px){
