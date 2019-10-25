@@ -13,7 +13,7 @@ function slide(x) {
     let start = document.querySelector('.start');
     let button = document.getElementsByClassName('botton');
     let content = document.getElementsByClassName('content');
-
+    let backgound = document.querySelector('.background-history');
     for (let i = 0; i < content.length; i++) {
         content[i].scrollTop = 0;
     }
@@ -36,7 +36,19 @@ function slide(x) {
         }
 
         let slider = document.querySelector('.slider');
+        let ap = document.querySelector('#ap');
+        let apimg = document.querySelector('.imgap');
+
         slider.style.transform = `translateX(${-100 * nowContent}vw)`
+        backgound.style.marginLeft = `${-0.5 * nowContent * 50}vw`
+
+        if (nowContent == 0) {
+            ap.style.transform = `translateX(${50 - 15}vw)`
+        } else {
+            ap.style.transform = `translateX(${157 * nowContent}vw)`
+        }
+
+        apimg.style.transform = `scaleX(${x})`
     }, 200);
 
 }
