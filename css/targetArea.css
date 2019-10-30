@@ -23,13 +23,18 @@ footer{
 }
 .grid-2-col{
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 60% 40%;
 }
 .column{
     position: relative;
 }
+.map-wrap{
+    display: flex;
+    justify-content: center;
+}
 .map{
     width: 600px;
+    opacity: 0.6;
 }
 .map > figure > img{
     width: 100%;
@@ -42,13 +47,30 @@ footer{
 .map-re > div > img{
     width: 100%;
     cursor: pointer;
-    opacity: 0.7;
-}
-.map-re > div > img:hover{
     opacity: 1;
 }
 .map-re > div{
+    opacity: 0.7;
+}
+.map-re > div:hover{
+    opacity: 1;
+}
+
+.map-re > div:hover{
+    opacity: 1;
+}
+
+.map-re > div{
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.map-des{
+    position: absolute;
+    user-select: none;
+    cursor: pointer;
+    z-index: 105;
 }
 .map1{
     top: 0px;
@@ -80,6 +102,26 @@ footer{
     width: 295px;
     z-index: 102;
 }
+
+.map-data{
+    display: flex;
+    justify-content: center;
+    transition: 0.3s;
+    width: 60%;
+    /* height: 100%; */
+    background: #E4E0D7;
+    border: 1px solid #BB964E;
+    border-radius: 1.25rem;
+}
+.map-data-content{
+    padding: 20px;
+}
+.map-data-head{
+    text-align: center;
+}
+.map-data-reg{
+    text-align: center;
+}
 @media only screen and (max-width:1200px){
     .grid-2-col{
         display: grid;
@@ -96,32 +138,35 @@ footer{
         width: 300px;
     }
     .map1{
-        top: 16px;
-        left: 87px;
-        width: 64px;
+        top: 0px;
+        left: 65px;
+        width: 87px;
     }
     .map2{
-        top: 46px;
-        left: 139px;
-        width: 70px;
+        top: 41px;
+        left: 136px;
+        width: 95px;
     }
     .map3{
-        top: 62px;
-        left: 97px;
-        width: 75px;
+        top: 63px;
+        left: 78px;
+        width: 102px;
         z-index: 102;
     }
     .map4{
-        top: 113px;
-        left: 135px;
-        width: 37px;
+        top: 132px;
+        left: 130px;
+        width: 50px;
         z-index: 103;
     }
     .map5{
-        top: 127px;
-        left: 77px;
-        width: 108px;
+        top: 151px;
+        left: 50px;
+        width: 148px;
         z-index: 102;
+    }
+    .map-des{
+        font-size: 55%;
     }
     
 }
