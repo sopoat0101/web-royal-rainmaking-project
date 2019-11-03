@@ -1,5 +1,7 @@
 // import { area } from "../json/area.js";
 
+// window.onload = closeFullData;
+
 area = {
     "area": [
         {
@@ -66,5 +68,20 @@ function changeReg(x, obj) {
         }
     }
 
+    let fullData = document.querySelector('.full-data');
+
+    fullData.style.transform = 'scale(1)';
+    document.body.style.touchAction = 'none';
+    // document.body.style.overflow = 'hidden';
     obj.style.opacity = 1;
+}
+
+function closeFullData() {
+    let fullData = document.querySelector('.full-data');
+    let mapreg = document.getElementsByClassName("map-reg");
+    for (let i = 0; i < mapreg.length; i++) {
+        mapreg[i].style.opacity = 0.7;
+    }
+    fullData.style.transform = 'scale(0)';
+    // document.body.style.overflow = 'hidden auto';
 }
