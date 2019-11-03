@@ -56,23 +56,23 @@
                             <figure><img src="assets/targetArea/svg/แผนที่ทั้งอัน1.svg" alt=""></figure>
                         </div>
                         <div class="map-re">
-                            <div class="map1">
+                            <div class="map1 map-reg" onclick="changeReg(0, this)">
                                 <div class="map-des font-Kanit"><b>ภาคเหนือ</b></div>
                                 <img src="assets/targetArea/svg/ภาคเหนือสี1.svg" alt="">
                             </div>
-                            <div class="map2">
+                            <div class="map2 map-reg" onclick="changeReg(1, this)">
                                 <div class="map-des font-Kanit"><b>ภาคตะวันออกเฉียงเหนือ</b></div>
                                 <img src="assets/targetArea/svg/อองเฉียงเหนือสี1.svg" alt="">
                             </div>
-                            <div class="map3">
+                            <div class="map3 map-reg" onclick="changeReg(2, this)">
                                 <div class="map-des font-Kanit"><b>ภาคกลาง</b></div>
                                 <img src="assets/targetArea/svg/กลางสี1.svg" alt="">
                             </div>
-                            <div class="map4">
+                            <div class="map4 map-reg" onclick="changeReg(3, this)">
                                 <div class="map-des font-Kanit"><b>ภาคตะวันออก</b></div>
                                 <img src="assets/targetArea/svg/ตะวันออกมีสี1.svg" alt="">
                             </div>
-                            <div class="map5">
+                            <div class="map5 map-reg" onclick="changeReg(4, this)">
                                 <div class="map-des font-Kanit"><b>ภาคใต้</b></div>
                                 <img src="assets/targetArea/svg/ภาคใต้มีสี1.svg" alt="">
                             </div>
@@ -85,7 +85,7 @@
                             <b>
                                 <div class="map-data-head color-c2">ศูนย์ปฎิบัติการฝนหลวง</div>
                                 <div class="map-data-reg color-c2">ภาคเหนือ</div>
-                                <ul>
+                                <ul class="map-sub">
                                     <li>หน่วยฯ เชียงใหม่</li>
                                     <li>หน่วยฯ พิษณุโลก/แพร่</li>
                                     <li>หน่วยฯ ตาก</li>
@@ -102,5 +102,6 @@
         </footer>
     </div>
 </body>
+<script src="./js/targetArea.js"></script>
 
 </html>
