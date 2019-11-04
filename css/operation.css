@@ -6,6 +6,10 @@
 	margin-left: 20%;
 }
 
+.margin-top-20{
+	margin-top: 20px;
+}
+
 .margin-right-20{
 	margin-right: 20%;
 }
@@ -205,5 +209,8 @@
 	#cloud2{
 		right: -30px;
 		bottom: 50px;
+	}
+	#header{
+		margin-top: 40px;
 	}
 }
