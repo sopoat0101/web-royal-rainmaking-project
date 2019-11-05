@@ -1,0 +1,45 @@
+.relative{
+	position: relative;
+}
+
+.absolute{
+	position: absolute;
+}
+
+.wraper{
+	overflow: hidden;
+	width: 100%;
+}
+
+.header{
+	margin-top: 20px;
+}
+
+.head-border{
+	padding: 0px 13%;
+	border-left: 2px solid #AF9A6E;
+	border-right: 2px solid #AF9A6E;
+	position: relative;
+}
+
+.content{
+	display: flex;
+}
+
+.content-image{
+	width: 35px;
+	margin-right: 10px;
+}
+
+.container.main{
+	background-image: url('../assets/result/svg/content-bg-1.svg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 150vh;
+	padding: 0% 10%;
+}
+
+.inner-content{
+	width: 300px;
+}
