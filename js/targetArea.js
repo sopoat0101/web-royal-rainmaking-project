@@ -55,7 +55,7 @@ function changeReg(x, obj) {
     let mapdatareg = document.getElementsByClassName("map-data-reg");
 
     for (let i = 0; i < mapreg.length; i++) {
-        mapreg[i].style.opacity = 0.7;
+        mapreg[i].style.opacity = "";
     }
 
     for (let j = 0; j < sub.length; j++) {
@@ -83,5 +83,4 @@ function closeFullData() {
         mapreg[i].style.opacity = 0.7;
     }
     fullData.style.transform = 'scale(0)';
-    // document.body.style.overflow = 'hidden auto';
 }
