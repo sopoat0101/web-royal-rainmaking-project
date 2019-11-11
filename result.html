@@ -42,14 +42,18 @@
 		<div class="container">
 			<!--BANNER-->
 			<div class="header text-center">
-				<div class="head-border">
+				<div class="head-border relative">
 					<!--HEADER-->
+					<img class="absolute" src="assets/result/svg/flower-banner-left.svg" width="40%" id="banner_flower_left" alt="">
 					<div class="color-c3 font-ITALICT text-space-1 font-size-L">Result</div>
 					<div class="color-c4 font-Kanit text-space-5"><b>ผลที่ได้จากการทำฝนหลวง</b></div>
+					<img class="absolute" src="assets/result/svg/flower-banner-right.svg" id="banner_flower_right" width="40%" alt="">
 				</div>
 			</div>
-			<div class="container text-center">
-				<img src="assets/result/svg/cloud-banner.svg" width="300px" height="auto">
+			<div class="container text-center relative">
+				<img class="absolute layer-mid mobile-opt" src="assets/result/svg/banner-left-leaf.svg " width="10%" id="banner_leaf_left" alt="">
+				<img class="relative layer-top" src="assets/result/svg/cloud-banner.svg" width="300px" height="auto">
+				<img class="absolute layer-mid mobile-opt" src="assets/result/svg/banner-right-leaf.svg" width="10%" id="banner_leaf_right" alt="">
 			</div>
 		</div>
 		<div class="relative">
@@ -130,5 +134,6 @@
 		</footer>
 	</div>
 </body>
+<script src="./js/result.js"></script>
 
 </html>

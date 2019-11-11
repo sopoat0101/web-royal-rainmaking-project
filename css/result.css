@@ -88,6 +88,26 @@
 	overflow-x: hidden;
 }
 
+#banner_flower_left{
+	top: 50px;
+	left: -91%;
+}
+
+#banner_flower_right{
+	top: 50px;
+	left: 157%;
+}
+
+#banner_leaf_left{
+	top: -2%;
+	left: 30.5%;
+}
+
+#banner_leaf_right{
+	top: 10%;
+	left: 58%;
+}
+
 .head-content{
 	padding: 20px;
 	text-align: center;
@@ -110,6 +130,22 @@
 	display: none;
 }
 @media only screen and (max-width: 1200px){
+	#banner_flower_left{
+		top: 50px;
+		left: -64%;
+	}
+	#banner_flower_right{
+		top: 50px;
+		left: 130%;
+	}
+	#banner_leaf_left{
+		top: 10%;
+		left: 25%;
+	}
+	#banner_leaf_right{
+		top: 15%;
+		left: 63%;
+}
 	.fix-background > img{
 		min-width: 900px;
 		width: 900px;
@@ -138,6 +174,22 @@
 }
 
 @media only screen and (max-width: 900px){
+	#banner_flower_left{
+		top: 50px;
+		left: -52%;
+	}
+	#banner_flower_right{
+		top: 50px;
+		left: 118%;
+	}
+	#banner_leaf_left{
+		top: 15%;
+		left: 20%;
+	}
+	#banner_leaf_right{
+		top: 20%;
+		left: 68%;
+	}
 	.content-wrap > div{
 		width: 500px;
 		display: grid;
@@ -169,6 +221,22 @@
 	}
 }
 @media only screen and (max-width: 520px){
+	#banner_flower_left{
+		top: -30px;
+		left: -45%;
+	}
+	#banner_flower_right{
+		top: -30px;
+		left: 105%;
+	}
+	#banner_leaf_left{
+		top: 20%;
+		left: 8%;
+	}
+	#banner_leaf_right{
+		top: 25%;
+		left: 83%;
+	}
 	.node-content > img{
 		width: 30px;
 		margin: auto;
