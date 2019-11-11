@@ -5,12 +5,6 @@
 .absolute{
 	position: absolute;
 }
-
-.wraper{
-	overflow: hidden;
-	width: 100%;
-}
-
 .header{
 	margin-top: 20px;
 }
@@ -19,52 +13,200 @@
 	padding: 0px 13%;
 	border-left: 2px solid #AF9A6E;
 	border-right: 2px solid #AF9A6E;
-	position: relative;
 }
-.content:nth-child(1){
+
+.wraper{
+	overflow-x: hidden;
+}
+.result-img-bg > img{
+	width: 100%;
+}
+/*  */
+.fix-background{
 	display: flex;
-	align-items: center;
-	flex-direction: row-reverse;
-	padding: 0 25%;
+	justify-content: center;
+	flex-wrap: nowrap;
+	overflow-x: hidden;
+	padding-top: 150px;
 }
-
-.content:nth-child(2){
+.fix-background > img{
+	min-width: 1200px;
+	width: 1200px;
+	user-select: none;
+}
+.full-background{
 	display: flex;
-	align-items: center;
-	padding: 400px 25%;
+	justify-content: center;
+	flex-wrap: nowrap;
 }
-
-.content{
-	position: relative;
-	display: flex;
-	align-items: center;
-}
-
-#outer-content{
-	padding: 3% 23%;
-	display: flex;
-	flex-direction: row !important;
-}
-
-.content-image{
-	width: 35px;
-	margin-right: 30px;
-}
-
-.inner-content.mobile{
-	display: flex;
-	position: absolute;
-}
-
-.container.main{
-	background-image: url('../assets/result/svg/content-bg-1.svg');
-	background-position: center;
-	background-repeat: no-repeat;
+.full-background{
+	background-image: url('../assets/result/svg/น้ำเขื่อนN.svg');
 	background-size: cover;
-	height: 150vh;
-	padding: 0% 10%;
+	background-repeat: no-repeat;
+	background-position: top;
+}
+.content-wrap{
+	width: 100%;
+	top: 0;
+	display: flex;
+	justify-content: center;
+}
+.content-wrap > div{
+	width: 1200px;
+	display: grid;
+	padding: 0px 10px 10px;
+	grid-template-columns: 50% 50%;
+}
+.node-content{
+	display: grid;
+	grid-template-columns: auto auto;
+	max-width: 600px;
+	font-size: 1.5em;
+}
+.node-content > img{
+	width: 50px;
+	margin: auto;
+	margin-top: 0;
+	padding: 0px 20px;
 }
 
+.n1{
+	top: 0;
+}
+.n2{
+	top: 200px;
+}
+.n3{
+	top: 400px;
+}
+.n4{
+	top: 750px;
+}
+
+.content-wrap-2{
+	padding-top: 25%;
+	overflow-x: hidden;
+}
+
+.head-content{
+	padding: 20px;
+	text-align: center;
+}
 .inner-content{
-	width: 300px;
+	width: 90%;
+}
+.node-content-2{
+	margin: 20px 20px;
+	font-size: 1.5em;
+	display: flex;
+	align-items: center;
+}
+.node-content-2 > img{
+	margin: auto;
+	position: relative;
+	width: 80%;
+}
+.result-mobile{
+	display: none;
+}
+@media only screen and (max-width: 1200px){
+	.fix-background > img{
+		min-width: 900px;
+		width: 900px;
+	}
+	.content-wrap > div{
+		width: 900px;
+	}
+	.node-content{
+		display: grid;
+		grid-template-columns: auto auto;
+		width: 50vw;
+		max-width: 450px;
+	}
+	.n1{
+		top: 0;
+	}
+	.n2{
+		top: 200px;
+	}
+	.n3{
+		top: 200px;
+	}
+	.n4{
+		top: 500px;
+	}
+}
+
+@media only screen and (max-width: 900px){
+	.content-wrap > div{
+		width: 500px;
+		display: grid;
+		grid-template-columns: 100%;
+	}
+	.result-desktop{
+		display: none;
+	}
+	.node-content{
+		display: grid;
+		grid-template-columns: auto auto;
+		width: 90vw;
+		margin: 20px 0px;
+	}
+	.result-mobile{
+		display: flex;
+	}
+	.n1{
+		top: 0;
+	}
+	.n2{
+		top: 0;
+	}
+	.n3{
+		top: 0;
+	}
+	.n4{
+		top: 0;
+	}
+}
+@media only screen and (max-width: 520px){
+	.node-content > img{
+		width: 30px;
+		margin: auto;
+		margin-top: 0;
+		padding: 0px 20px;
+	}
+	.fix-background > img{
+		min-width: 500px;
+		width: 500px;
+	}
+	.content-wrap > div{
+		width: 500px;
+		display: grid;
+		grid-template-columns: 100%;
+	}
+	.node-content{
+		display: grid;
+		grid-template-columns: auto auto;
+		width: 90vw;
+		margin: 20px 0px;
+		font-size: 1em;
+	}
+	.n1{
+		top: 0;
+	}
+	.n2{
+		top: 0;
+	}
+	.n3{
+		top: 0;
+	}
+	.n4{
+		top: 0;
+	}
+	.node-content-2{
+		width: 90vw;
+		margin: auto;
+		padding: 20px;
+		font-size: 1em;
+	}
 }
