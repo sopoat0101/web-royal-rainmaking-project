@@ -5,10 +5,10 @@ function checkCenterScreen() {
     let centerScreen = warp.getBoundingClientRect().height / 2;
     let checkPointScreen = warp.scrollTop + centerScreen;
     // for show1
-    let show1PosStart = document.querySelector('.title-picture').offsetTop;
-    let show1PosEnd = document.querySelector('.title-picture').offsetTop +
-        document.querySelector('.title-picture').getBoundingClientRect().height +
-        document.querySelector('#content1').getBoundingClientRect().height;
+    let show1PosStart = document.querySelector('.content-wrap').offsetTop;
+    let show1PosEnd = document.querySelector('.content-wrap').offsetTop +
+        document.querySelector('.content-wrap').getBoundingClientRect().height +
+        document.querySelector('.content-wrap-2').getBoundingClientRect().height;
     if (checkPointScreen > show1PosStart && checkPointScreen <= show1PosEnd) {
         showContent1(true);
     }
