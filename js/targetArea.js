@@ -92,9 +92,9 @@ function changeReg(x, obj) {
 
     let fullData = document.querySelector('.full-data');
     let mapdata = document.getElementsByClassName('map-data');
-    for (let i = 0; i < mapdata.length; i++) {
-        mapdata[i].style.touchAction = 'none';
-    }
+    // for (let i = 0; i < mapdata.length; i++) {
+    //     mapdata[i].style.touchAction = 'none';
+    // }
     fullData.style.transform = 'scale(1)';
     fullData.style.touchAction = 'none';
     obj.style.opacity = 1;
@@ -104,9 +104,9 @@ function closeFullData() {
     let fullData = document.querySelector('.full-data');
     let mapreg = document.getElementsByClassName("map-reg");
     let mapdata = document.getElementsByClassName('map-data');
-    for (let i = 0; i < mapdata.length; i++) {
-        mapdata[i].style.touchAction = '';
-    }
+    // for (let i = 0; i < mapdata.length; i++) {
+    //     mapdata[i].style.touchAction = '';
+    // }
     for (let i = 0; i < mapreg.length; i++) {
         mapreg[i].style.opacity = 0.7;
     }
