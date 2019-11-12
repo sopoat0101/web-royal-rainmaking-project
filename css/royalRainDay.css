@@ -19,11 +19,13 @@
 #flower{
 	bottom: 10%;
 	left: 10.5%;
+	transition: 2s;
 }
 
 #banner{
 	bottom: -10%;
 	left: 20%;
+	transition: .7s;
 }
 
 .container{
@@ -45,6 +47,7 @@
 	padding-top: 3%;
 	border-bottom: 1px solid white;
 	text-align: center;
+	transition: .3s;
 }
 
 .main-image{
@@ -65,23 +68,27 @@
 #cloud1{
 	top: 70%;
 	left: -1%;
+	transition: 2s;
 }
 
 #cloud2{
 	top: 7%;
 	left: 58%;
-	width: 50%
+	width: 50%;
+	transition: 2s;
 }
 
 #cloud3{
 	top: 180%;
 	left: 10%;
 	width: 40%;
+	transition: 2s;
 }
 
 #cloud4{
 	top: 165%;
 	left: 60%;
+	transition: 2s;
 }
 
 @media only screen and (max-width: 1024px){
