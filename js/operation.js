@@ -1,4 +1,78 @@
+window.addEventListener('scroll', scroll);
 currentIndex = 0;
+
+
+function scroll(){
+	let scroll = window.scrollY;
+	let scrollable = document.documentElement.scrollHeight - window.innerHeight;
+	let contentStart = content.offsetTop;
+	let contentEnd = content.getBoundingClientRect().height;
+
+	if(scroll >= 0 && scroll < contentEnd){
+		showContent1(true);
+	}
+	else{
+		showContent1(false);
+	}
+
+	let content2Start = contentEnd;
+
+	if(scroll >= content2Start && scroll <= scrollable){
+		showContent2(true);
+	}
+	else{
+		showContent2(false);
+	}
+}
+
+function showContent1(x){
+	if(x){
+		content.style.opacity = '1';
+		content.style.transform = 'translateY(0vw)';
+	}
+	else{
+		content.style.opacity = '0';
+		content.style.transform = 'translateY(100px)';
+	}
+}
+
+function showContent2(x){
+	let flowerLeft = document.querySelector('#flower-left');
+	let flowerRight = document.querySelector('#flower-right');
+	let innercontent = document.querySelectorAll('.content-slider');
+	let image = document.querySelectorAll('.image-slider');
+	if(x){
+		headSlider.style.opacity = '1';
+		headSlider.style.transform = 'translateY(0vw)';
+		cloud1.style.left = '-150px';
+		cloud2.style.right = '-150px';
+		for(i = 0; i < innercontent.length; i++){
+			innercontent[i].style.opacity = '1';
+			innercontent[i].style.transform = 'translateY(0vw)';
+			image[i].style.opacity = '1';
+			image[i].style.transform = 'translateY(0vw)';
+		}
+		
+		flowerLeft.style.transform = 'translateY(0vw)';
+		flowerRight.style.transform = 'translateY(0vw)';
+	}
+	else{
+		headSlider.style.opacity = '0';
+		headSlider.style.transform = 'translateY(100px)';
+		cloud1.style.left = '-1500px';
+		cloud2.style.right = '-1500px';
+		for(i = 0; i < innercontent.length; i++){
+			innercontent[i].style.opacity = '0';
+			innercontent[i].style.transform = 'translateY(100vw)';
+			image[i].style.opacity = '0';
+			image[i].style.transform = 'translateY(100vw)';
+		}
+		flowerLeft.style.transform = 'translateY(100vw)';
+		flowerRight.style.transform = 'translateY(100vw)';
+
+	}
+}
+
 
 function slide(value, index){
 	let slider = document.getElementById("slider");

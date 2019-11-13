@@ -3,6 +3,20 @@
 	width: 100%;
 }
 
+#content{
+	opacity: 0;
+	transition: .7s;
+	transform: translateY(50px);
+}
+
+#headSlider{
+	transition: .7s;
+}
+
+.flower{
+	transition: 1.5s;
+}
+
 .margin-left-20{
 	margin-left: 20%;
 }
@@ -100,10 +114,13 @@
 	align-items: center;
 	margin: 0 auto;
 	width: 500px;
+	transition: .7s;
+
 }
 .image-slider{
 	margin-top: 20px;
 	position: relative;
+	transition: .7s;
 }
 
 .content{
@@ -126,10 +143,12 @@
 #cloud1{
 	left: -150px;
 	top: 50px;
+	transition: 4s;
 }
 #cloud2{
 	right: -150px;
 	bottom: 140px;
+	transition: 4s;
 }
 
 @media only screen and (max-width: 1200px){

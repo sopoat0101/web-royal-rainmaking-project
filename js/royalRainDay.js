@@ -4,7 +4,8 @@ function checkCenterScreen() {
     let warp = document.querySelector('body');
     let centerScreen = warp.getBoundingClientRect().height / 2;
     // for show1
-    let show1PosEnd = document.querySelector('.header-image').offsetTop 
+    let show1PosEnd = document.querySelector('.header-image').offsetTop
+    let scrollable = document.documentElement.scrollHeight - window.innerHeight;
     + (document.querySelector('#container1').getBoundingClientRect().height / 3);
 
     if (window.scrollY >= 0 && window.scrollY <= show1PosEnd) {
@@ -16,8 +17,13 @@ function checkCenterScreen() {
 
 
     //for show2
-    let show2PosStart = document.querySelector('#container2').offsetTop;
-    if (window.scrollY > show2PosStart && window.scrollY <= document.documentElement.scrollHeight - window.innerHeight) {
+    let show2PosStart = show1PosEnd;
+    console.clear();
+    console.log(show2PosStart);
+    console.log(window.scrollY);
+    console.log(scrollable);
+
+    if (window.scrollY > show2PosStart && window.scrollY <= scrollable) {
         showContent2(true);
     }
     else {
