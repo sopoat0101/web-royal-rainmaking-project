@@ -144,6 +144,9 @@
 .content1_main_right{
 	transition: .7s;
 }
+#content1{
+	overflow: hidden;
+}
 #content_background{
 	transition: 2s;
 }
