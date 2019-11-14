@@ -4,7 +4,7 @@ function checkCenterScreen() {
     let warp = document.querySelector('body');
     let centerScreen = warp.getBoundingClientRect().height / 2;
     // for show1
-    let show1PosEnd = document.querySelector('.header-image').offsetTop
+    let show1PosEnd = document.querySelector('.header-image').offsetTop;
     let scrollable = document.documentElement.scrollHeight - window.innerHeight;
     + (document.querySelector('#container1').getBoundingClientRect().height / 3);
 

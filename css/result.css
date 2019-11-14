@@ -91,21 +91,25 @@
 #banner_flower_left{
 	top: 50px;
 	left: -91%;
+	transition: 1.5s;
 }
 
 #banner_flower_right{
 	top: 50px;
 	left: 157%;
+	transition: 1.5s;
 }
 
 #banner_leaf_left{
 	top: -2%;
 	left: 30.5%;
+	transition: 2s;
 }
 
 #banner_leaf_right{
 	top: 10%;
 	left: 58%;
+	transition: 2s;
 }
 
 .head-content{
@@ -128,6 +132,15 @@
 }
 .result-mobile{
 	display: none;
+}
+.content1_main_left{
+	transition: .7s;
+}
+.content1_main_right{
+	transition: .7s;
+}
+#content_background{
+	transition: 2s;
 }
 @media only screen and (max-width: 1200px){
 	#banner_flower_left{
@@ -230,12 +243,14 @@
 		left: 105%;
 	}
 	#banner_leaf_left{
-		top: 20%;
-		left: 8%;
+		top: 0%;
+		left: 0%;
+		width: 20%;
 	}
 	#banner_leaf_right{
-		top: 25%;
-		left: 83%;
+		top: 0%;
+		left: 77%;
+		width: 25%;
 	}
 	.node-content > img{
 		width: 30px;
@@ -277,4 +292,16 @@
 		padding: 20px;
 		font-size: 1em;
 	}
+
+	@media only screen and (max-width: 400px){
+		#banner_leaf_left{
+			top: 10%;
+			left: -10%;
+			width: 20%;
+	}
+		#banner_leaf_right{
+			top: 10%;
+			left: 85%;
+			width: 25%;
+		}
 }
