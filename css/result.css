@@ -21,6 +21,10 @@
 .result-img-bg > img{
 	width: 100%;
 }
+
+.result-img-bg{
+	transition: 2s;
+}
 /*  */
 .fix-background{
 	display: flex;
@@ -115,6 +119,7 @@
 .head-content{
 	padding: 20px;
 	text-align: center;
+	transition: .7s;
 }
 .inner-content{
 	width: 90%;
@@ -141,6 +146,15 @@
 }
 #content_background{
 	transition: 2s;
+}
+.full-background{
+	transition: 2s;
+}
+.left{
+	transition: .7s;
+}
+.right{
+	transition: .7s;
 }
 @media only screen and (max-width: 1200px){
 	#banner_flower_left{
