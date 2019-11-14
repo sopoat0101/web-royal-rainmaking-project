@@ -64,7 +64,7 @@ function showMainContent1(x){
             content1_main_left[i].style.opacity = '0';
             content1_main_left[i].style.transform = 'translateX(-10vw)';
             content1_main_right[i].style.opacity = '0';
-            content1_main_right[i].style.transform = 'translateX(10vw)';
+            content1_main_right[i].style.transform = 'translateX(10vw)'; //
         }
     }
 }
