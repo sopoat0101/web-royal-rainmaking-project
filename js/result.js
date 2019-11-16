@@ -35,10 +35,6 @@ function scroll(){
     }
 
     let flowerStart = document.querySelector('.result-img-bg');
-    console.clear();
-    console.log(scrollable - flowerStart.getBoundingClientRect().height);
-    console.log(scroll);
-    console.log(scrollable);
 
     if(scroll >= flowerStart.offsetTop && scroll <= scrollable){
         flowerStart.style.transform = 'translateY(0vw) scale(1)';
