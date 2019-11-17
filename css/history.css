@@ -6,6 +6,10 @@ footer{
     width: 100vw;
     bottom: 0;
     margin-top: 50px;
+    padding: 0;
+}
+footer > b{
+    padding: 50px;
 }
 .wrap-content{
     overflow: hidden;
@@ -93,7 +97,7 @@ footer{
     top: -35px;
     transition: 0.3s;
 }
-.start > figure > img{
+.start > img{
     transition: 0.3s;    
     cursor: pointer;
 }
@@ -130,7 +134,10 @@ footer{
 }
 .content-img{
     position: absolute;
+    transform: translateY(100px);
     top: calc(300px - 250px);
+    transition: 1.5s;
+    opacity: 0;
 }
 .content-img > figure > img{
     width: 100%;
@@ -141,7 +148,7 @@ footer{
     width: 600vw;
     height: 100%;
     position: absolute;
-    transition: 0.8s;
+    transition: 0.6s ease-in-out;
     overflow: hidden;
     opacity: 0.6;
 }
@@ -222,7 +229,6 @@ footer{
     }
     .content-para{
         padding: 50px 60px;
-        text-align: justify;
     }
     .content-img{
         padding: 0px 0px 50px;

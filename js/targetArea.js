@@ -2,6 +2,10 @@
 
 // window.onload = closeFullData;
 
+window.addEventListener('scroll', checkScreen);
+
+document.querySelector('.map-reg').style.opacity = 1;
+
 area = {
     "area": [
         {
@@ -112,4 +116,42 @@ function closeFullData() {
     }
     fullData.style.transform = 'scale(0)';
     fullData.style.touchAction = '';
+}
+
+function checkScreen() {
+
+    let centerScreen = window.scrollY + innerHeight / 2;
+
+    let box = document.querySelector('.size-box-content');
+
+    let show = document.getElementsByClassName('slideShow');
+
+    for (let i = 0; i < show.length; i++) {
+        fadeIn(show[i], centerScreen);
+    }
+
+    fadeIn(show[0], centerScreen);
+
+    //fadeIn(box, centerScreen);
+}
+
+function getPosY(offset) {
+    let posY = 0;
+    posY = offset.offsetTop;
+    if (offset.offsetTop != 0) {
+        return posY + getPosY(offset.offsetParent);
+    }
+    return posY;
+}
+
+function fadeIn(obj, centerScreen) {
+    obj.style.transition = '0.5s';
+    if (centerScreen > getPosY(obj) && centerScreen < getPosY(obj) + obj.offsetHeight) {
+        obj.style.opacity = 1;
+        obj.style.transform = `translateY(0px)`;
+    }
+    // else {
+    //     obj.style.opacity = 0;
+    //     obj.style.transform = `translateY(100px)`;
+    // }
 }

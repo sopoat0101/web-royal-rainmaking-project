@@ -14,6 +14,23 @@ function slide(x) {
     let button = document.getElementsByClassName('botton');
     let content = document.getElementsByClassName('content');
     let backgound = document.querySelector('.background-history');
+    let contentImg = document.getElementsByClassName('content-img');
+
+    if (nowContent != 0) {
+        for (let i = 0; i < contentImg.length; i++) {
+            contentImg[i].style.transform = `translateY(100px)`;
+            contentImg[i].style.opacity = `0`
+        }
+        contentImg[nowContent - 1].style.transform = `translateY(0)`;
+        contentImg[nowContent - 1].style.opacity = `1`
+    }
+    else {
+        for (let i = 0; i < contentImg.length; i++) {
+            contentImg[i].style.transform = `translateY(100px)`;
+            contentImg[i].style.opacity = `0`
+        }
+    }
+
     for (let i = 0; i < content.length; i++) {
         content[i].scrollTop = 0;
     }
@@ -36,19 +53,19 @@ function slide(x) {
         }
 
         let slider = document.querySelector('.slider');
-        let ap = document.querySelector('#ap');
+        // let ap = document.querySelector('#ap');
         let apimg = document.querySelector('.imgap');
 
-        slider.style.transform = `translateX(${-100 * nowContent}vw)`
-        backgound.style.marginLeft = `${-0.5 * nowContent * 50}vw`
+        slider.style.transform = `translateX(${-100 * nowContent}vw)`;
+        backgound.style.marginLeft = `${50 * nowContent}vw`;
 
-        if (nowContent == 0) {
-            ap.style.transform = `translateX(${50 - 15}vw)`
-        } else {
-            ap.style.transform = `translateX(${157 * nowContent}vw)`
-        }
+        // if (nowContent == 0) {
+        //     ap.style.transform = `translateX(${50 - 15}vw)`
+        // } else {
+        //     ap.style.transform = `translateX(${157 * nowContent}vw)`
+        // }
 
-        apimg.style.transform = `scaleX(${x})`
+        // apimg.style.transform = `scaleX(${x})`
     }, 200);
 
 }

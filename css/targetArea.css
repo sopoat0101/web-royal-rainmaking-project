@@ -2,6 +2,10 @@ footer{
     position: relative;
     bottom: 0;
 }
+.slideShow{
+    opacity: 0;
+    transform:translateY(100px);
+}
 .ap{
     display: flex;
     justify-content: center;
@@ -33,10 +37,10 @@ footer{
 }
 .map-wrap{
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
 .map{
-    width: 600px;
+    width: 300px;
     opacity: 0.6;
 }
 .map > figure > img{
@@ -69,33 +73,33 @@ footer{
     z-index: 105;
 }
 .map1{
-    top: 0px;
-    left: 130px;
-    width: 173px;
+    top: 8px;
+    left: -7px;
+    width: 158px;
     z-index: 103;
 }
 .map2{
     top: 83px;
-    left: 272px;
-    width: 190px;
+    left: 123px;
+    width: 176px;
     z-index: 103;
 }
 .map3{
-    top: 127px;
-    left: 157px;
-    width: 203px;
+    top: 125px;
+    left: 16px;
+    width: 186px;
     z-index: 102;
 }
 .map4{
-    top: 264px;
-    left: 259px;
-    width: 100px;
+    top: 251px;
+    left: 113px;
+    width: 89px;
     z-index: 103;
 }
 .map5{
-    top: 304px;
-    left: 100px;
-    width: 295px;
+    top: 288px;
+    left: -33px;
+    width: 269px;
     z-index: 102;
 }
 
@@ -439,6 +443,7 @@ footer{
         width: 300px;
     }
     .map-wrap{
+        margin-bottom: 20px;
         display: flex;
         justify-content: center;
     }
@@ -446,7 +451,7 @@ footer{
         position: absolute;
         width: 300px;
     }
-    .map1{
+    /* .map1{
         top: 0px;
         left: 65px;
         width: 87px;
@@ -472,10 +477,10 @@ footer{
         top: 151px;
         left: 50px;
         width: 148px;
-        z-index: 102;
-    }
+        z-index: 102; 
+    }*/
     .map-des{
-        font-size: 55%;
+        font-size: 100%;
     }
     .content-right, .content-left{
         display: flex;
