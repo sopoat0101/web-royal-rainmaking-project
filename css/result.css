@@ -97,24 +97,28 @@
 	top: 50px;
 	left: -91%;
 	transition: 1.5s;
+	transform: translateX(-15vw) translateY(5vw);
 }
 
 #banner_flower_right{
 	top: 50px;
 	left: 157%;
 	transition: 1.5s;
+	transform: translateX(15vw) translateY(5vw);
 }
 
 #banner_leaf_left{
 	top: -2%;
 	left: 30.5%;
 	transition: 2s;
+	transform: translateX(10vw) translateY(5vw) scale(0);
 }
 
 #banner_leaf_right{
 	top: 10%;
 	left: 58%;
 	transition: 2s;
+	transform: translateX(-10vw) translateY(5vw) scale(0);
 }
 
 .head-content{

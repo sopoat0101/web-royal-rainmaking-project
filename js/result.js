@@ -1,4 +1,7 @@
 window.addEventListener('scroll', scroll);
+window.onload = showContent1;
+showMainContent1(false);
+showMainContent2(false);
 
 function scroll() {
     let scroll = window.scrollY;
@@ -6,7 +9,7 @@ function scroll() {
     let bannerStart = 0;
     let bannerEnd = document.querySelector('#banner').getBoundingClientRect().height / 2;
 
-    if (scroll > bannerStart && scroll <= bannerEnd) {
+    if (scroll >= bannerStart && scroll <= bannerEnd) {
         showContent1(true);
     }
     else {
