@@ -18,10 +18,6 @@ function checkCenterScreen() {
 
     //for show2
     let show2PosStart = show1PosEnd;
-    console.clear();
-    console.log(show2PosStart);
-    console.log(window.scrollY);
-    console.log(scrollable);
 
     if (window.scrollY > show2PosStart && window.scrollY <= scrollable) {
         showContent2(true);
