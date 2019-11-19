@@ -5,7 +5,7 @@ showMainContent2(false);
 
 function scroll() {
     let scroll = window.scrollY;
-    let scrollable = document.documentElement.scrollHeight - window.innerHeight;
+    let scrollable = (document.documentElement.scrollHeight - window.innerHeight) + 1;
     let bannerStart = 0;
     let bannerEnd = document.querySelector('#banner').getBoundingClientRect().height / 2;
 
