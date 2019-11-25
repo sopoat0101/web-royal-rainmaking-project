@@ -4,6 +4,10 @@
 
 window.addEventListener('scroll', checkScreen);
 
+scrdd = document.querySelector('.warp-parallax');
+
+// scrdd.addEventListener('scroll', checkScreen);
+
 document.querySelector('.map-reg').style.opacity = 1;
 
 area = {
@@ -119,12 +123,19 @@ function closeFullData() {
 }
 
 function checkScreen() {
-
     let centerScreen = window.scrollY + innerHeight / 2;
+    // let centerScreen = scrdd.scrollTop + innerHeight / 2;
 
     let box = document.querySelector('.size-box-content');
 
     let show = document.getElementsByClassName('slideShow');
+
+    let b_flower = document.getElementsByClassName('b-flower');
+    let flower = document.getElementsByClassName('flower');
+
+    for (let i = 0; i < b_flower.length; i++) {
+        bloom(b_flower[i], flower[i]);
+    }
 
     for (let i = 0; i < show.length; i++) {
         fadeIn(show[i], centerScreen);
@@ -150,8 +161,15 @@ function fadeIn(obj, centerScreen) {
         obj.style.opacity = 1;
         obj.style.transform = `translateY(0px)`;
     }
-    // else {
-    //     obj.style.opacity = 0;
-    //     obj.style.transform = `translateY(100px)`;
-    // }
+}
+
+function bloom(check, target) {
+    target.style.transition = '1.5s';
+    if (check.getBoundingClientRect().top < window.screen.height / 2) {
+        target.style.opacity = 1;
+        target.style.transform = `scale(1)`;
+    } else {
+        target.style.opacity = 0;
+        target.style.transform = `scale(0)`;
+    }
 }
